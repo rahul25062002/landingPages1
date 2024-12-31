@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mover Your Goods with safety</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+   <!-- Header Section -->
+<!-- Header Section -->
+<header class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto flex justify-between items-center py-4">
+        <a href="#" class="text-3xl font-bold text-blue-500">Packers & Movers</a>
+        <nav class="hidden md:flex space-x-8">
+            <a href="#hero" class="text-gray-700 hover:text-blue-500 transition">Home</a>
+            <a href="#about" class="text-gray-700 hover:text-blue-500 transition">About Us</a>
+            <a href="#packages" class="text-gray-700 hover:text-blue-500 transition">Packages</a>
+            <a href="#features" class="text-gray-700 hover:text-blue-500 transition">Features</a>
+            <a href="#testimonials" class="text-gray-700 hover:text-blue-500 transition">Testimonials</a>
+            <a href="#gallery" class="text-gray-700 hover:text-blue-500 transition">Gallery</a>
+            <a href="#contact" class="text-gray-700 hover:text-blue-500 transition">Contact Us</a>
+        </nav>
+        <div class="md:hidden">
+            <button id="mobile-menu-toggle" class="focus:outline-none">
+                <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden bg-white md:hidden">
+        <nav class="flex flex-col space-y-4 p-4">
+            <a href="#hero" class="text-gray-700 hover:text-blue-500 transition">Home</a>
+            <a href="#about" class="text-gray-700 hover:text-blue-500 transition">About Us</a>
+            <a href="#packages" class="text-gray-700 hover:text-blue-500 transition">Packages</a>
+            <a href="#features" class="text-gray-700 hover:text-blue-500 transition">Features</a>
+            <a href="#testimonials" class="text-gray-700 hover:text-blue-500 transition">Testimonials</a>
+            <a href="#gallery" class="text-gray-700 hover:text-blue-500 transition">Gallery</a>
+            <a href="#contact" class="text-gray-700 hover:text-blue-500 transition">Contact Us</a>
+        </nav>
+    </div>
+</header>
+
+
+    <!-- Hero Section -->
+<section id="hero" class="bg-cover bg-center h-screen relative" style="background-image: url('images/home.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+        <div class="text-center text-white">
+            <h1 class="text-5xl font-bold mb-4 animate-fade-in">Customized Moving Solutions Tailored Just for You</h1>
+            <p class="text-xl mb-8">Find your perfect packaging solution</p>
+            <a href="#contact" class="bg-coral-500 text-white py-3 px-6 rounded-lg hover:bg-coral-600 transition">Book Now</a>
+        </div>
+    </div>
+</section>
+
+
+   <!-- About Us Section -->
+<section id="about" class="py-20 bg-white  px-5">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div class="animate-slide-in-left">
+            <img src="images/3d.jpg" alt="About Us Image" class="rounded-lg shadow-lg">
+        </div>
+        <div class="text-lg">
+            <h2 class="text-3xl font-bold text-blue-500 mb-4 animate-fade-in">About Us</h2>
+            <p class="text-gray-600 mb-4">Packers & Movers is a reliable and professional moving company that provides customized moving solutions tailored just for you.</p>
+            <p class="text-gray-600 mb-8">We are committed to providing our customers with the best possible service.</p>
+            <a href="#contact" class="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Tour Packages Section -->
+
+<section id="packages" class="py-20 bg-gray-50 px-5">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-blue-500 mb-12">Moving Packages</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Local Moving Package Card -->
+            <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition">
+                <img src="images/local.jpg" alt="Local Moving Image" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-2xl font-semibold mb-2">Local Moving</h3>
+                <p class="text-gray-600 mb-4">Reliable moving services for short distances within the city.</p>
+                <a href="#contact" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition">Learn More</a>
+            </div>
+            
+            <!-- Long Distance Moving Package Card -->
+            <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition">
+                <img src="images/long.jpg" alt="Long Distance Moving Image" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-2xl font-semibold mb-2">Long Distance Moving</h3>
+                <p class="text-gray-600 mb-4">Expert handling and timely delivery for long-distance relocations.</p>
+                <a href="#contact" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition">Learn More</a>
+            </div>
+            
+            <!-- Office Relocation Package Card -->
+            <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition">
+                <img src="images/office.jpg" alt="Office Relocation Image" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-2xl font-semibold mb-2">Office Relocation</h3>
+                <p class="text-gray-600 mb-4">Efficient and professional relocation services for office spaces.</p>
+                <a href="#contact" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Features Section -->
+
+
+
+<section id="features" class="py-16 bg-gray-100 px-5">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8 text-blue-500">Why Choose Us?</h2>
+        <p class="text-gray-600 mb-12">Experience seamless relocation with our professional and reliable moving services.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg transition-transform transform hover:translate-y-1">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4">Professional Packing</h3>
+                    <p class="text-gray-600">We use top-quality materials and techniques to secure your belongings safely.</p>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg transition-transform transform hover:translate-y-1">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4">Experienced Movers</h3>
+                    <p class="text-gray-600">Our trained professionals handle every item with the utmost care and expertise.</p>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg transition-transform transform hover:translate-y-1">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4">24/7 Support</h3>
+                    <p class="text-gray-600">Our support team is available around the clock to assist you throughout the move.</p>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="bg-white rounded-lg shadow-lg transition-transform transform hover:translate-y-1">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4">Affordable Pricing</h3>
+                    <p class="text-gray-600">We offer competitive rates without compromising on the quality of our service.</p>
+                </div>
+            </div>
+            
+            <!-- Card 5 -->
+            <div class="bg-white rounded-lg shadow-lg transition-transform transform hover:translate-y-1">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4">Insurance Coverage</h3>
+                    <p class="text-gray-600">Your belongings are covered with comprehensive insurance for peace of mind.</p>
+                </div>
+            </div>
+            
+            <!-- Card 6 -->
+            <div class="bg-white rounded-lg shadow-lg transition-transform transform hover:translate-y-1">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4">Timely Delivery</h3>
+                    <p class="text-gray-600">We ensure your items reach their destination on schedule, every time.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+  <!-- Testimonials Section -->
+<!-- What Our Clients Say Section -->
+<section id="testimonials" class="py-16 bg-gray-50 px-5">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8 text-blue-500">What Our Clients Say</h2>
+        <p class="text-gray-600 mb-12">Read feedback from clients who trusted us with their moves.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Testimonial Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <div class="p-6">
+                    <p class="text-gray-600 italic mb-4">“The team handled everything with care and professionalism. Our move was smooth and hassle-free!”</p>
+                    <h4 class="font-semibold text-lg">- Sarah Johnson</h4>
+                </div>
+            </div>
+            
+            <!-- Testimonial Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <div class="p-6">
+                    <p class="text-gray-600 italic mb-4">“From packing to unloading, every step was organized and efficient. Highly recommend their service!”</p>
+                    <h4 class="font-semibold text-lg">- Mark Smith</h4>
+                </div>
+            </div>
+            
+            <!-- Testimonial Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <div class="p-6">
+                    <p class="text-gray-600 italic mb-4">“I was impressed by the attention to detail and care taken with our belongings. They made moving easy!”</p>
+                    <h4 class="font-semibold text-lg">- Emily Davis</h4>
+                </div>
+            </div>
+            
+            <!-- Testimonial Card 4 -->
+            <div class="bg-white rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <div class="p-6">
+                    <p class="text-gray-600 italic mb-4">“Moving our office was a big task, but this team handled it seamlessly. Couldn't be happier with the results!”</p>
+                    <h4 class="font-semibold text-lg">- David Brown</h4>
+                </div>
+            </div>
+            
+            <!-- Testimonial Card 5 -->
+            <div class="bg-white rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <div class="p-6">
+                    <p class="text-gray-600 italic mb-4">“They kept us informed and supported us throughout the process. Excellent service from start to finish!”</p>
+                    <h4 class="font-semibold text-lg">- Jessica Taylor</h4>
+                </div>
+            </div>
+            
+            <!-- Testimonial Card 6 -->
+            <div class="bg-white rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-2xl">
+                <div class="p-6">
+                    <p class="text-gray-600 italic mb-4">“I highly recommend this moving company! Professional, reliable, and great communication throughout.”</p>
+                    <h4 class="font-semibold text-lg">- Michael White</h4>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+  <!-- Gallery Section -->
+<!-- Our Destinations Section -->
+<!-- Our Destinations Section -->
+<!-- Our Destinations Section -->
+<section id="destinations" class="py-16 bg-gray-100 px-5">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8 text-blue-500">Our Service Locations</h2>
+        <p class="text-gray-600 mb-12">We offer reliable moving services across major cities and regions.</p>
+
+        <div class="slider" id="destination-slider">
+            <div class="slider-wrapper">
+                
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <img src="images/new-york.jpg" alt="New York" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold">New York City</h3>
+                        <p class="text-gray-600">Providing efficient moving services within and around NYC.</p>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <img src="images/los-angles.jpg" alt="Los Angeles" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold">Los Angeles</h3>
+                        <p class="text-gray-600">Seamless relocation services across LA and nearby areas.</p>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <img src="images/cicago.jpg" alt="Chicago" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold">Chicago</h3>
+                        <p class="text-gray-600">Specialized in residential and commercial moves throughout Chicago.</p>
+                    </div>
+                </div>
+                
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <img src="images/housten.jpg" alt="Houston" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold">Houston</h3>
+                        <p class="text-gray-600">Trusted by families and businesses in the Houston area.</p>
+                    </div>
+                </div>
+                
+                <!-- Slide 5 -->
+                <div class="slide">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <img src="images/miami.jpg" alt="Miami" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold">Miami</h3>
+                        <p class="text-gray-600">Relocation services tailored for vibrant Miami and its suburbs.</p>
+                    </div>
+                </div>
+                
+                <!-- Slide 6 -->
+                <div class="slide">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <img src="images/san.jpg" alt="San Francisco" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold">San Francisco</h3>
+                        <p class="text-gray-600">Experienced movers available for the Bay Area and beyond.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Navigation buttons -->
+            <button class="slider-button prev" id="prevSlide">‹</button>
+            <button class="slider-button next" id="nextSlide">›</button>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+  <!-- Contact Us Section -->
+<section id="contact" class="py-20 bg-gray-50">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-blue-500 mb-12">Get in Touch</h2>
+        <form class="max-w-lg mx-auto">
+            <input type="text" placeholder="Your Name" class="w-full p-4 mb-4 rounded-lg border-gray-300">
+            <input type="email" placeholder="Your Email" class="w-full p-4 mb-4 rounded-lg border-gray-300">
+            <textarea placeholder="Your Message" class="w-full p-4 mb-4 rounded-lg border-gray-300"></textarea>
+            <button type="submit" class="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+   <!-- Footer -->
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="bg-white text-gray-800 py-16 border-t border-gray-300">
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-5">
+        <!-- Logo and Address Section -->
+        <div>
+            <a href="#" class="text-3xl font-bold text-blue-500 mb-4 block">Packers and Movers</a>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, delectus?</p>
+            <p class="mt-4">
+                <strong>Address:</strong><br>
+               F5 A26 Noida Sec 3 , Near Metro Noida Sec 16
+            </p>
+            <p><strong>Email:</strong> qualityzoneinfotech@gmail.com</p>
+            <p><strong>Phone:</strong> +91 1234 123 123</p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div>
+            <h3 class="text-xl font-semibold mb-6 text-blue-500">Quick Links</h3>
+            <ul class="space-y-3">
+                <li><a href="#about" class="hover:text-blue-400 transition">About Us</a></li>
+                <li><a href="#packages" class="hover:text-blue-400 transition">Tour Packages</a></li>
+                <li><a href="#features" class="hover:text-blue-400 transition">Our Features</a></li>
+                <li><a href="#testimonials" class="hover:text-blue-400 transition">Testimonials</a></li>
+                <li><a href="#contact" class="hover:text-blue-400 transition">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media and Newsletter Section -->
+        <div>
+            <h3 class="text-xl font-semibold mb-6 text-blue-500">Stay Connected</h3>
+            <ul class="space-y-3">
+                <li><a href="#" class="hover:text-blue-400 transition">Facebook</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition">Instagram</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition">Twitter</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition">LinkedIn</a></li>
+            </ul>
+            <h3 class="text-xl font-semibold mt-8 mb-4 text-blue-500">Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Enter your email" class="w-full p-3 rounded-lg border-gray-300 mb-4">
+                <button type="submit" class="w-full p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-400 transition">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="border-t border-gray-300 mt-12 pt-6">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-600">&copy; 2024 Packers and Movers. All Rights Reserved Design and Developed by <a style="color: blue;" href="https://qualityzoneinfotech.com/
+                ">Quality Zone Infotech</a>.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slider.js/1.0.0/slider.min.js"></script>
+
+<script>
+    document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    const sliderWrapper = document.querySelector('.slider-wrapper');
+const slides = document.querySelectorAll('.slide');
+const prevButton = document.getElementById('prevSlide');
+const nextButton = document.getElementById('nextSlide');
+
+let currentIndex = 0;
+
+function updateSlider() {
+    const slideWidth = slides[0].clientWidth; // Get the width of a single slide
+    sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`; // Move the slides
+}
+
+// Next slide function
+nextButton.addEventListener('click', () => {
+    if (currentIndex < slides.length - 3) { // Ensure only 3 slides are shown
+        currentIndex++;
+        updateSlider();
+    }
+});
+
+// Previous slide function
+prevButton.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+    }
+});
+
+// Auto-slide functionality (optional)
+setInterval(() => {
+    if (currentIndex < slides.length - 3) {
+        currentIndex++;
+    } else {
+        currentIndex = 0; // Loop back to the start
+    }
+    updateSlider();
+}, 3000); // Change slide every 3 seconds
+
+
+</script>
+
+</body>
+
+</html>

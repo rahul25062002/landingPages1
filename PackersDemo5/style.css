@@ -1,0 +1,82 @@
+.testimonial-slider {
+    position: relative;
+    max-width: 80%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin:auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    .testimonialial-slider {
+      max-width: 95%;  
+    } 
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .slide p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .slide h4 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .slide small {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Navigation buttons */
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .slide p {
+      font-size: 1rem;
+    }
+  
+    .slide h4 {
+      font-size: 1.1rem;
+    }
+  
+    .slide small {
+      font-size: 0.8rem;
+    }
+  }
+  

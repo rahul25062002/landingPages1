@@ -1,0 +1,44 @@
+.slider-auto-left > div,
+.slider-auto-right > div {
+    display: none; /* Hide all slides */
+}
+.slider-auto-left > div:first-child,
+.slider-auto-right > div:first-child {
+    display: block; /* Show the first slide */
+}
+
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+    min-width: 33.33%; /* Show 3 slides at a time */
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

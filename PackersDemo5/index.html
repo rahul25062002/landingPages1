@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packers and Movers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-image: url('img/g1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: cente
+            
+        }
+
+        header span {
+            font-size: 4rem !important;
+            text-align: center;
+            margin: auto;
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        /* Rooms Section */
+        .rooms {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .room-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .room-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .room-card .room-info {
+            padding: 15px;
+        }
+
+        .room-card .room-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .room-card .room-info p {
+            margin: 5px 0;
+        }
+
+        .room-card .room-info .price {
+            color: #f4511e;
+            font-weight: bold;
+        }
+
+        /* Services Section */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .service {
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .service img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .feature {
+            background: #e9ecef;
+            border-radius: 8px;
+            margin: 10px;
+            flex: 1 1 calc(30% - 20px);
+            padding: 15px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        .feature h3 {
+            margin-top: 0;
+        }
+        @media (max-width: 768px) {
+            .feature {
+                flex: 1 1 calc(45% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .feature {
+                flex: 1 1 100%;
+            }
+        }    
+  
+
+.section-title {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+      
+       
+
+
+        /* Contact Us Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #f4511e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+           /* Header Styling */
+           .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem 2rem;
+            z-index: 1000;
+        }
+
+        /* To push content below header */
+        main {
+            padding-top: 80px;
+        }
+
+        /* Logo Styling */
+        .logo {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Navigation Styling */
+        nav {
+            display: flex;
+            gap: 1.5rem;
+            position: relative;
+            right: 5%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        /* Mobile Menu Icon Styling */
+        .menu-icon {
+            display: none;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+        }
+
+        .hero-text{
+            font-size: 34px;
+        }
+
+        /* Mobile Navigation */
+        @media (max-width: 768px) {
+            .hero-text{
+            font-size: 24px !important;
+        }
+            nav {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                padding: 1rem 0;
+            }
+
+            nav.active {
+                display: flex;
+                padding-left: 10px;
+            }
+
+            .menu-icon {
+                display: block;
+                position: fixed;
+                z-index: 1000;
+                right:2%;
+            }
+            .header{
+                justify-content: space-between;
+            }
+        }
+
+        .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.1); /* Makes the card slightly larger on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Adds a more pronounced shadow */
+}
+
+
+    </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="logo">Packers & Movers</div>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#rooms">PACKAGES</a>
+            <a href="#services">SERVICES</a>
+            <a href="#testimonials">TESTIMONIALS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </div>
+
+<!-- Hero Section -->
+<header id="hero">
+    <span class="hero-text">Welcome to INDIA'S Best Packers & Movers</span>
+</header>
+
+<!-- Rooms Section -->
+<section class="container" id="services">
+    <h2 class="section-title">Our Moving Services</h2>
+    <div class="services">
+        <div class="service-card">
+            <img src="img/g12.jpg" alt="Home Relocation" style="width: 100%;">
+            <div class="service-info">
+                <h3>Home Relocation</h3>
+                <p>Experience hassle-free home shifting with our expert team, ensuring the safe transport of all your belongings.</p>
+                <p class="price">Starting from ₹2000</p>
+            </div>
+        </div>
+        <div class="service-card">
+            <img src="img/office.jpg" alt="Office Relocation" style="width: 100%;">
+            <div class="service-info">
+                <h3>Office Relocation</h3>
+                <p>Seamless office relocation services designed to minimize downtime and ensure a smooth transition for your business.</p>
+                <p class="price">Starting from ₹5000</p>
+            </div>
+        </div>
+        <div class="service-card">
+            <img src="img/long.jpg" alt="Vehicle Transportation" style="width: 100%;">
+            <div class="service-info">
+                <h3>Vehicle Transportation</h3>
+                <p>Reliable vehicle transportation with advanced tracking to ensure the secure and timely delivery of your vehicle.</p>
+                <p class="price">Starting from ₹3000</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Services Section -->
+<div class="container">
+    <h2>Our Features</h2>
+    <div class="features">
+        <div class="feature">
+            <h3>Professional Packing Services</h3>
+            <p>Our trained team ensures all items are securely packed using high-quality materials, reducing the risk of damage during transit.</p>
+        </div>
+        <div class="feature">
+            <h3>Safe Transportation</h3>
+            <p>We use well-maintained vehicles equipped with safety features to ensure your belongings reach their destination securely and on time.</p>
+        </div>
+        <div class="feature">
+            <h3>Customized Moving Plans</h3>
+            <p>Tailor your moving experience with personalized plans that suit your specific needs, whether local or long-distance.</p>
+        </div>
+        <div class="feature">
+            <h3>Insurance Coverage</h3>
+            <p>We offer comprehensive insurance options to protect your belongings, providing peace of mind throughout the moving process.</p>
+        </div>
+        <div class="feature">
+            <h3>Loading and Unloading Assistance</h3>
+            <p>Our team is trained to handle heavy lifting, ensuring safe loading and unloading of your items.</p>
+        </div>
+        <div class="feature">
+            <h3>Storage Solutions</h3>
+            <p>Flexible storage options are available for short-term or long-term needs, allowing you to store your items securely.</p>
+        </div>
+        <div class="feature">
+            <h3>Real-Time Tracking</h3>
+            <p>Stay updated with our real-time tracking feature, so you can monitor the progress of your shipment.</p>
+        </div>
+        <div class="feature">
+            <h3>Experienced Staff</h3>
+            <p>Our professional movers have years of experience, ensuring a hassle-free and smooth moving experience.</p>
+        </div>
+        <div class="feature">
+            <h3>24/7 Customer Support</h3>
+            <p>Our dedicated support team is available around the clock to assist you with any questions or concerns.</p>
+        </div>
+        <div class="feature">
+            <h3>Transparent Pricing</h3>
+            <p>We provide upfront pricing with no hidden fees, ensuring you know exactly what to expect before the move begins.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<section class="container" id="test">
+    <h2 class="section-title">Testimonials</h2>
+    <div class="testimonial-slider">
+        <div class="slides">
+          <div class="slide">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque incidunt fugit</p>
+            <h4>Rayan Prag</h4>
+            <small>CEO, Example Inc.</small>
+          </div>
+          <div class="slide">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illum molestias nam.</p>
+            <h4>Bhanu Prtap</h4>
+            <small>Marketing Director, ABC Ltd.</small>
+          </div>
+          <div class="slide">
+            <p>"Great customer support and fast delivery!"</p>
+            <h4>Syama Preashd Mukharji</h4>
+            <small>Freelancer</small>
+          </div>
+        </div>
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button>
+      </div>
+    
+</section>
+
+
+
+
+<div class="gallery" style="margin:auto;padding:20px; margin-top:30px;">
+    
+    <div class="card">
+      <img src="img/g3.jpg" alt="Image 1">
+    </div>
+    <div class="card">
+      <img src="img/g4.jpg" alt="Image 2">
+    </div>
+    <div class="card">
+      <img src="img/g7.jpg" alt="Image 3">
+    </div>
+</div>
+
+<!-- Testimonial Slider Section -->
+
+
+
+<!-- Contact Us Form -->
+<section class="container" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Packers & Movers. All rights reserved.Design and Developed by <a style="color: #ddd;" href="https://www.qualityzoneinfotech.com">Quality Zone Infotech</a></p>
+    <p>F5 1st floor A 26 Noid sec 3, Near by metro 16, Noida UP India</p>
+    <p>Phone: +91 1234 123 123 | Email: qualityzoneinfotech@gmail.com</p>
+</footer>
+
+<script>
+    const slides = document.querySelector('.slides');
+const slide = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+let currentIndex = 0;
+
+// Show the next slide
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slide.length; // loop back to the first
+  updateSlidePosition();
+});
+
+// Show the previous slide
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slide.length) % slide.length; // loop to the last
+  updateSlidePosition();
+});
+
+// Update the slide position based on the current index
+function updateSlidePosition() {
+  slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+}
+
+    function toggleMenu() {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
+

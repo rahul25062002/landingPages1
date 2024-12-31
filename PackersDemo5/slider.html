@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Testimonial Slider</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.testimonial-slider {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.slide p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.slide h4 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.slide small {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Navigation buttons */
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slide p {
+    font-size: 1rem;
+  }
+
+  .slide h4 {
+    font-size: 1.1rem;
+  }
+
+  .slide small {
+    font-size: 0.8rem;
+  }
+}
+
+</style>
+<body>
+
+  <div class="testimonial-slider">
+    <div class="slides">
+      <div class="slide">
+        <p>"This is an amazing service! Highly recommended."</p>
+        <h4>John Doe</h4>
+        <small>CEO, Example Inc.</small>
+      </div>
+      <div class="slide">
+        <p>"I had a wonderful experience. Five stars!"</p>
+        <h4>Jane Smith</h4>
+        <small>Marketing Director, ABC Ltd.</small>
+      </div>
+      <div class="slide">
+        <p>"Great customer support and fast delivery!"</p>
+        <h4>Mark Johnson</h4>
+        <small>Freelancer</small>
+      </div>
+    </div>
+    <button class="prev-btn">&#10094;</button>
+    <button class="next-btn">&#10095;</button>
+  </div>
+
+  <script>
+    const slides = document.querySelector('.slides');
+const slide = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+let currentIndex = 0;
+
+// Show the next slide
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slide.length; // loop back to the first
+  updateSlidePosition();
+});
+
+// Show the previous slide
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slide.length) % slide.length; // loop to the last
+  updateSlidePosition();
+});
+
+// Update the slide position based on the current index
+function updateSlidePosition() {
+  slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+}
+
+  </script>
+
+</body>
+</html>
